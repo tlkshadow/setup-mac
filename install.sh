@@ -16,6 +16,8 @@ if which xcodebuild >/dev/null; then
 		sudo brew install git-flow
 		# Oh my ZSH
 		curl -L http://install.ohmyz.sh | sh
+		cp ~/.zshrc ~/.zshrc.orig
+		cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 		sudo chsh -s /bin/zsh
 		# npm
 		curl -L https://npmjs.org/install.sh | sh
