@@ -23,6 +23,10 @@ if which xcodebuild >/dev/null; then
 		curl -L https://npmjs.org/install.sh | sh
 		# lessc
 		sudo npm install -g less
+		
+		sudo port select python python27-apple
+		brew install python
+		pip install --user git+git://github.com/Lokaltog/powerline
 
 		echo --------------------------------------------------
 		echo "Finished install of all needed commandline tools"
